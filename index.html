@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Evaluation Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main countdown timer to September 7, 2025 8pm -->
+        <div class="timer-section">
+            <h1 class="timer-label">Tíð intil atkvøðingin er liðug</h1>
+            <div id="main-timer" class="timer">
+                <span id="hours">00</span> : 
+                <span id="minutes">00</span> : 
+                <span id="seconds">00</span>
+            </div>
+            <div class="timer-units">
+                <span>tímar</span>
+                <span>minuttir</span>
+                <span>sekundur</span>
+            </div>
+        </div>
+
+        <!-- 10-minute repeating timer -->
+        <div class="timer-section">
+            <h2 class="timer-label">Tíð til tit burdi skift til næsta spæl
+                <span class="subtitle">(mest fyri borðspøl)</span>
+            </h2>
+            <div id="game-timer" class="timer">
+                <span id="game-minutes">10</span> : 
+                <span id="game-seconds">00</span>
+            </div>
+            <div class="timer-units">
+                <span>minuttir</span>
+                <span>sekundur</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="timer.js"></script>
+</body>
+</html>
