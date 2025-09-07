@@ -22,6 +22,17 @@ body {
     width: 100%;
 }
 
+.logo-section {
+    margin-bottom: 40px;
+}
+
+.logo {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
 .timer-section {
     margin-bottom: 60px;
 }
@@ -78,6 +89,14 @@ body {
 
 /* Responsive design */
 @media (max-width: 768px) {
+    .logo {
+        max-width: 150px;
+    }
+    
+    .logo-section {
+        margin-bottom: 30px;
+    }
+    
     .timer-label {
         font-size: 1.4rem;
     }
@@ -97,6 +116,14 @@ body {
 }
 
 @media (max-width: 480px) {
+    .logo {
+        max-width: 120px;
+    }
+    
+    .logo-section {
+        margin-bottom: 25px;
+    }
+    
     .timer-label {
         font-size: 1.2rem;
     }
